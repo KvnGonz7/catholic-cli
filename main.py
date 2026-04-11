@@ -1,4 +1,5 @@
 from prayers import show_our_father, show_hail_mary, show_glory_be
+from readings import show_daily_reading
 
 def show_menu():
     print("Catholic CLI")
@@ -17,9 +18,8 @@ def main():
 
         if choice == "1":
             show_our_father()
-            print()
         elif choice == "2":
-            print("\nDaily readings coming soon.")
+            show_daily_reading()
         elif choice == "3":
             show_hail_mary()
         elif choice == "4":
