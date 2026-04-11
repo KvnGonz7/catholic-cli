@@ -15,3 +15,8 @@ def show_hail_mary():
     print("Holy Mary, Mother of God,")
     print("pray for us sinners,")
     print("now and at the hour of our death. Amen.\n")
+
+def show_glory_be():
+    print("\nGlory be to the Father, and to the Son, and to the Holy Spirit,")
+    print("as it was in the beginning, is now, and ever shall be,")
+    print("world without end. Amen.")
