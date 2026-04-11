@@ -3,12 +3,32 @@ from readings import show_daily_reading
 
 def show_menu():
     print("Catholic CLI")
-    print("1. Our Father")
+    print("1. Prayers")
     print("2. Daily Reading")
-    print("3. Hail Mary")
-    print("4. Glory Be")
-    print("5. Exit")
+    print("3. Exit")
 
+def show_prayer_menu():
+    print("\nPrayers")
+    print("1. Our Father")
+    print("2. Hail Mary")
+    print("3. Glory Be")
+    print("4. Back")
+
+def prayer_menu():
+    while True:
+        show_prayer_menu()
+        choice = input ("Choose a prayer: ").strip()
+
+        if choice == "1":
+            show_our_father()
+        elif choice == "2":
+            show_hail_mary()
+        elif choice == "3":
+            show_glory_be()
+        elif choice == "4":
+            break
+        else: 
+            print(\nInvalid choice. Try again.\n")
 
 def main():
     while True:
