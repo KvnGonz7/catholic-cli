@@ -1,5 +1,5 @@
 from prayers import show_our_father, show_hail_mary, show_glory_be
-from readings import show_daily_reading
+from readings import show_daily_reading 
 
 def show_menu():
     print("Catholic CLI")
@@ -8,7 +8,7 @@ def show_menu():
     print("3. Exit")
 
 def show_prayer_menu():
-    print("\nPrayers")
+    print("\nPrayer Menu")
     print("1. Our Father")
     print("2. Hail Mary")
     print("3. Glory Be")
@@ -28,23 +28,18 @@ def prayer_menu():
         elif choice == "4":
             break
         else: 
-            print(\nInvalid choice. Try again.\n")
+            print("\nInvalid choice. Try again.\n")
 
 def main():
     while True:
         show_menu()
         choice = input("Choose an option: ").strip()
 
-
         if choice == "1":
-            show_our_father()
+            prayer_menu()
         elif choice == "2":
             show_daily_reading()
         elif choice == "3":
-            show_hail_mary()
-        elif choice == "4":
-            show_glory_be()
-        elif choice == "5":
             print("\nGoodbye.")
             break
         else:
