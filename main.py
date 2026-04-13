@@ -1,6 +1,6 @@
 from prayers import show_our_father, show_hail_mary, show_glory_be
 from readings import show_daily_reading 
-from examination import show_examination_intro
+from examination import examination_menu
 
 def show_menu():
     print("Catholic CLI")
@@ -42,7 +42,7 @@ def main():
         elif choice == "2":
             show_daily_reading()
         elif choice == "3":
-            show_examination_intro()
+            examination_menu()
         elif choice == "4":
             print("\nGoodbye.")
             break
